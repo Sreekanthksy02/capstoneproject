@@ -11,7 +11,6 @@ export default function routes() {
     <Routes>
       <Route element={<Home />} path="/" />
       <Route element={<BookingPage />} path="/booking" />
-      {/* <Route element={<ConfirmationPage />} path="/confirmation" /> */}
     </Routes>
   );
 }
