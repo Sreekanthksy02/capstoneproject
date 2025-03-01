@@ -1,20 +1,108 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+html {
+  font-family: "Markazi Text", sans-serif;
+  letter-spacing: 0.1px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+:root {
+  --primary-button: #f4ce14;
+  --primary-color: #495e57;
+  --container-padding: 4.8rem;
+  --background-card: #edefee;
+  --price-color: #e3855a;
+}
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 var(--container-padding);
 }
+.divider {
+  border-bottom: 1px solid var(--primary-color);
+  margin-top: 3rem;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+}
+a:hover {
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.border {
+  border: 2px solid red;
+}
+button {
+  all: unset;
+}
+button:hover {
+  cursor: pointer;
+}
+.icon-chevron-up {
+  color: #fff;
+  background-color: var(--primary-button);
+  opacity: 0.8;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+.icon-chevron-up:hover {
+  background-color: var(--primary-button);
+  opacity: 1;
 
-@import "tailwindcss";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  border: 1px solid hsla(255, 255, 255, 0.2);
+}
+@media (max-width: 2000px) {
+  .container {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--container-padding);
+  }
+}
+@media (max-width: 1600px) {
+  .container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--container-padding);
+  }
+}
+@media (max-width: 1170px) {
+  .container {
+    --container-padding: 1.7rem;
+    width: 90%;
+    padding: 0 var(--container-padding);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 0;
+  }
+  .icon-chevron-up {
+    opacity: 0.6;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 }

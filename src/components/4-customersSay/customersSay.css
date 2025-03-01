@@ -1,0 +1,56 @@
+.cutomer {
+  min-height: 450px;
+  padding-top: 3rem;
+}
+.cutomer .container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  /* padding-top: 20px; */
+  font-size: 40px;
+}
+.cutomer .container .cards.flex {
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 40px;
+}
+.cutomer .container .cards.flex article.card {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  background-color: var(--background-card);
+  border-radius: 15px;
+  opacity: 0.9;
+  transition: 0.3s;
+  
+}
+.cutomer .container .cards.flex article.card:hover {
+  opacity: 1;
+  border: 1px solid var(--primary-color);
+  /* rotate: 1deg; */
+  scale: 1.03;
+  /* cursor: pointer; */
+}
+.cutomer .container .cards.flex article.card span {
+  margin-left: 10%;
+  display: block;
+  margin-top: 20px;
+}
+.cutomer .container .cards.flex article.card .info {
+  margin-top: 15px;
+}
+.cutomer .container .cards.flex article.card .info img {
+  width: 130px;
+  height: 120px;
+  margin-left: 10%;
+  border-radius: 6px;
+}
+.cutomer .container .cards.flex article.card .info p {
+  font-size: 1.4rem;
+  transform: translate(-18px, -23px);
+}
+.cutomer .container .cards.flex article.card p {
+  margin-left: 10%;
+  margin-top: 15px;
+  font-size: 1rem;
+}

@@ -1,0 +1,57 @@
+section.chicago .container.flex {
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  row-gap: 40px;
+  min-height: 450px;
+  padding-top: 3rem;
+}
+section.chicago .container.flex .info h1 {
+  font-size: 40px;
+}
+section.chicago .container.flex .info h2 {
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+section.chicago .container.flex .info p {
+  font-size: 1.4rem;
+  max-width: 400px;
+  /* min-width: 300px; */
+  line-height: 1.6;
+}
+
+section.chicago .container.flex .photos {
+  position: relative;
+  right: 0;
+}
+
+section.chicago .container.flex .photo-1 {
+  position: relative;
+  width: 290px;
+  height: 320px;
+  transform: translate(25%, 17%);
+  z-index: 1;
+  /* position: absolute; */
+  border-radius: 15px;
+  border: 3px solid var(--primary-button);
+}
+section.chicago .container.flex .photo-2 {
+  /* position: absolute; */
+  border: 3px solid var(--primary-color);
+  width: 290px;
+  position: relative;
+  height: 320px;
+  z-index: 2;
+  border-radius: 15px;
+}
+@media (max-width: 1000px) {
+  section.chicago .container.flex .photos {
+    display: none;
+  }
+  section.chicago .container.flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  section.chicago .container.flex .info {
+    text-align: center;
+  }
+}

@@ -1,0 +1,106 @@
+.booking {
+  background-color: white;
+}
+.booking h1 {
+  margin-top: 50px;
+  font-size: 60px;
+  text-align: center;
+}
+.booking .container {
+  justify-content: start;
+  margin-top: 20px;
+}
+.booking .container .left {
+  width: 50%;
+}
+.booking .container form {
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.booking .container form label {
+  font-size: 28px;
+  font-weight: normal;
+  z-index: 1;
+}
+.booking .container form .date,
+.booking .container form .time,
+.booking .container form .guests,
+.booking .container form .occasion {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+.booking .container form input,
+.booking .container form .time select#time,
+.booking .container form input#guests,
+.booking .container form .occasion #occasion {
+  font-size: 22px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.526);
+  border-radius: 3px;
+}
+.booking .container form .submit {
+  width: 100%;
+}
+.booking .container form #submit {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  background-color: var(--primary-button);
+  border: var(--primary-button);
+  border-radius: 7px;
+  opacity: 0.9;
+  width: 100%;
+  height: 50px;
+  transition: 0.3s;
+}
+.booking .container form #submit:hover {
+  opacity: 1;
+  font-size: 1rem;
+}
+.booking .container form .submit p {
+  font-size: 1.8rem;
+  color: green;
+}
+.booking .container form .flex {
+  gap: 8px;
+  flex-direction: column;
+}
+.booking .container form .error {
+  color: red;
+  font-size: 1.2rem;
+}
+.booking .container .left .success {
+  display: flex;
+  justify-content: start;
+}
+.booking .container .left .success p {
+  color: #69b190;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.booking .container .right {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .booking .container .right {
+    display: none;
+  }
+  .booking .container .left {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 922px) {
+  .booking .container form {
+    flex-direction: column;
+  }
+}
